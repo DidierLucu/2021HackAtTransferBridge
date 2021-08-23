@@ -113,20 +113,121 @@
   <div class="column" style="background-color:rgb(100, 100, 100);">
     <h2 class="heading">Tier Three</h2>
     
+    <p>
+      TIER 3
+      The objective of tier 3 was to navigate an autonomous car through two mazes and have it auto dump its load. 
+        </p>
         <p>
-    
-    INFOMATION ABOUT TIER 3
-    
-  	</p>
+        Obstacles and Process to Solve Them
+        <ul>
+         <li>The initial logic for the autonomous, while we believed it would be simple at first we found it was a little more complicated to implement.
+         <li>Calibration was a huge part of this tier. Time constraints did not allow for better calibration.</li>  
+      </p>
+        <p>
+        Easy Bits
+        <ul>
+          <li>The code itself was not diffcult to write once we knew what we needed to do.</li>
+      
+          </ul>
+    </p>
 
 
     <div class="heading">
       <iframe  width="420" height="315"
-      src="https://www.youtube.com/embed/McWZ3ESy52w">
+      src="https://www.youtube.com/embed/playlist?list=PL0_C9ma2djOpSZ6_gY15Ko99k6dDmb1A1">
       </iframe>
   </div>
     
   </div>
+</div>
+
+<p class="center , info-box">
+  SOLIDWORKS
+  </p>
+
+  <p>
+    Process
+    <ul>
+    <li>Our team utilized "GRABCAD" to download a list of pre-made parts.</li>
+    <li>We designed any parts or assembled any subassembly that were not availabe in the list of pre-made parts and made drawings file or assembly files for them.</li>
+		<li>Using the pre-made parts list along with our own parts and subassemblies, we assembled a replica of the car in Solidworks with proper mates that followed physics rules(i.e. no pasing).</li>
+    <li>The next step was to perform FEA analysis on two of the parts : Platform and Mount. Mount has 3 configurations : with 2 ribs, with 1 rib, with no rib. We performed analysis on platform and each of the configurations and interpreted the results in our report.</li>
+    <li>Our team then made drawing files for parts we previously missed.</li>
+    <li>Finally, for the dump truck assembly, our team brainstormed design ideas and came up with some interesting additions to the previous version of the car. We utitlized self made assemblies and parts along with newly built subassemblies to build our final dump truck assembly.</li>
+    
+</p>
+
+  <h2>SolidWorks Images</h2>
+
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 10</div>
+  <img src="1.png" style="width:100%">
+  <div class="text">Caption Text</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 10</div>
+  <img src="2.png" style="width:100%">
+  <div class="text">Caption Two</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 10</div>
+  <img src="3.png" style="width:100%">
+  <div class="text">Caption Text</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 10</div>
+  <img src="4.png" style="width:100%">
+  <div class="text">Caption Two</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">5 / 10</div>
+  <img src="5.png" style="width:100%">
+  <div class="text">Caption Three</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">6 / 10</div>
+  <img src="6.png" style="width:100%">
+  <div class="text">Caption Three</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">7 / 10</div>
+  <img src="7.png" style="width:100%">
+  <div class="text">Caption Text</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">8 / 10</div>
+  <img src="8.png" style="width:100%">
+  <div class="text">Caption Two</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">9 / 10</div>
+  <img src="9.png" style="width:100%">
+  <div class="text">Caption Three</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">10 / 10</div>
+  <img src="10.png" style="width:100%">
+  <div class="text">Caption Text</div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
 </div>
 
 
@@ -144,6 +245,31 @@
     }
   }
   </script>
+
+<script>
+  var slideIndex = 0;
+  showSlides();
+  
+  function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+  }
+  </script>
+
+
+
 
 </body>
 </html>
