@@ -2,8 +2,6 @@
     box-sizing: border-box;
   }
 
-
-
 .center {
   
     text-align: center;
@@ -18,7 +16,7 @@
     float: left;
     width: 33.33%;
     padding: 10px;
-    height: 800px; 
+    height: 1200px; 
   }
 
 
