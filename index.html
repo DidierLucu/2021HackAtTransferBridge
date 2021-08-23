@@ -6,32 +6,114 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 </head>
+
 <body>
+<div class="header" id="myHeader">
+    <h2>2021 HAcK by C's Get Degrees</h2>
+  </div>
 
-<h2 class="heading">2021 HAcK by C's Get Degrees</h2>
-
-<p class="heading">Three of the roughest toughest engineers in all of UCLA decided to take on the challenge of a liftime.
-     They built not one, not two, but three different type of cars. One car ran through the power of bluetooth, one was controled by joysticks and one has cutting edge ai to find its own way through a maze. </p>
+<p class="center">Three of the roughest toughest engineers in all of UCLA decided to take on the challenge of a liftime.
+     They built not one, not two, but three different type of cars. One car ran through the power of bluetooth, one was controlled by joysticks and one has cutting edge AI to find its own way through a maze. </p>
 
 <div class="row">
   <div class="column" style="background-color:rgb(100, 100, 100);">
-    <h2 class="heading">Teir One</h2>
+    <h2 class="heading">Tier One</h2>
+    
+    <p>
+      HAcK OBJECTIVE
+        Main Objective
+          - Build a car using the part provided and control it through various different means to run it through two different mazes. 
+        Computer Aided Design Using Solidworks
+          - Utilize SolidWorks to CAD different parts of the car. 
+          - Make an assembly of the built car in Solidworks.
+          - Perform FEA analysis on two parts from the assembly, generate a report and write conclusions on the results of the FEA analysis.
+          - Make an assembly using custom parts to make a dump truck.
+        Coding
+          - Using python script, arduino, and terminal, control the built car to run through both mazes.
+          - Using the joystick module, IR emitter, and IR receiver, control the built car to run through both mazes.
+          - Develop a script such that the the car makes use of ultrasonic sensor, reflective IR sensor, joystick module, IR recriver, IR transmitter to autonomously drive the car through both mazes.
+          - Make a website using HTML, CSS, and Javascript to show your project.
+      </p>
+      <p>
+      TIER 1
+      The objective for tier 1 was to build a car using the parts given and be able to drive it via bluetooth through a python script. 
+          Obstacles and Process of Solve Them
+            - The main obstacle our team faced was figuring out the subassembly for the dismount platform. Our team spent the first day of HAcK, trying different ways to make the dismount subassembly.
+            - One of the team member plugged in a pin into "5V" instead of "VIN" which, although a tiny error, took a lot of time. Virtual collaboration issues delayed team's schedule.
+            - Mechanical issues with the parts we had came as one of the main big foes. One of the wheel had more friction to it than the other. So the car would slip at the end of a command, which in return caused a slight error in the position. Small errors add up to become huge ones. Our team spent a lot of time calibrating our code to overcome the downsides of the mechanical parts.
+            - Our team was skeptical about charging the lipo battery as we only had jumper wires to charge them. Some of the members accidentally shorted the battery as well. Our team ended up using the jumper wires to charge the battery at a low current level.
+          Easy Bits
+            - Our team was able to chew through the coding for tier 1, even though we had to calibrate it later for the mechanical issues.
+            - Setting up the drivetrain for the car was finished by all members extremely quickly.
+            - We did not have any issues with the motor drive setup.
+      </p>
+      <p>
+      After the completion of Tier 1, we had the full assembly of the car, where arduino, motor drive, and battery was setup.
+      </p>
+
     <div class="heading">
     <iframe  width="420" height="315"
-    src="https://www.youtube.com/embed/McWZ3ESy52w">
+    src="https://www.youtube.com/embed/playlist?list=PL0_C9ma2djOqb1fzaXvUmkgc9SRBl6qFN">
     </iframe>
 </div>
     <p>Some text..</p>
   </div>
   <div class="column" style="background-color:rgb(110, 110, 110);">
-    <h2 class="heading">Teir Two</h2>
+    <h2 class="heading">Tier Two</h2>
+    
+    
+    <p>
+    
+      TIER 2
+      The objective of tier 2 was to drive the car using the joystick module, IR emitter, and IR receiver.
+        Obstacles and Process to Solve Them
+         - Mechanical issues remained despite team's effort to reassemble. Due to the time commitment, the team decided to calibrate our codes to account for mechanical issues.
+         - The main problem during tier 2 was the IR receiver and emitter. These parts needed to be aligned in a certain manner so that the information sent by the emitter could be received by the receiver. 
+        
+      </p>
+
+
+    <div class="heading">
+      <iframe  width="420" height="315"
+      src="https://www.youtube.com/embed/playlist?list=PL0_C9ma2djOoaQbzgOhN9q4DTWym5WMCr">
+      </iframe>
+  </div>
     <p>Some text..</p>
   </div>
   <div class="column" style="background-color:rgb(100, 100, 100);">
-    <h2 class="heading">Teir Three</h2>
+    <h2 class="heading">Tier Three</h2>
+    
+        <p>
+    
+    INFOMATION ABOUT TIER 3
+    
+  	</p>
+
+
+    <div class="heading">
+      <iframe  width="420" height="315"
+      src="https://www.youtube.com/embed/McWZ3ESy52w">
+      </iframe>
+  </div>
     <p>Some text..</p>
   </div>
 </div>
+
+
+<script>
+  window.onscroll = function() {myFunction()};
+  
+  var header = document.getElementById("myHeader");
+  var sticky = header.offsetTop;
+  
+  function myFunction() {
+    if (window.pageYOffset > sticky) {
+      header.classList.add("sticky");
+    } else {
+      header.classList.remove("sticky");
+    }
+  }
+  </script>
 
 </body>
 </html>

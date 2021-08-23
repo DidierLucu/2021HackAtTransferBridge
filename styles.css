@@ -2,7 +2,9 @@
     box-sizing: border-box;
   }
 
-.heading {
+
+
+.center {
   
     text-align: center;
     
@@ -16,12 +18,25 @@
     float: left;
     width: 33.33%;
     padding: 10px;
-    height: 300px; 
+    height: 800px; 
   }
 
 
-  .row:after {
+.row:after {
     content: "";
     display: table;
     clear: both;
-  }
+}
+
+.header {
+    text-align: center;
+    padding: 10px 16px;
+    background: rgb(255, 253, 253);
+    color: black;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
